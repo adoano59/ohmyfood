@@ -1,6 +1,175 @@
-.photo-resto img{
-    width: 100%;
+@media screen and (min-width: 320px) {
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .presentation-menu1, .presentation-menu2, .presentation-menu3, .presentation-menu4  {
+        position: relative;
+        background-size: cover;
+        width: 100%;
+        height: 512px;
+    }
+    .presentation-menu1{
+        background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    }
+    .presentation-menu2 {
+        background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    }
+    .presentation-menu3 {
+        background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    }
+    .presentation-menu4 {
+        background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    }
+    .menu-box{
+        width: 100%;
+        gap: 40px;
+        background: #F6F6F6;
+        border-radius: 40px 40px 15px 15px;
+        
+    }
+    .title-menu1 {
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+        background: #F6F6F6;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-radius: 40px 40px 0px 0px;
+    }
+    .title-menu1 h1{
+        font-family: 'Shrikhand', cursive;
+        color: black;
+        font-size: 28px;
+    }
+    .category-menu{
+        width: 95%;
+        margin: auto;
+        gap: 12px;
+    }
+    .cat{
+        padding-left: 25px;
+    }
+    .cat p{
+        width: 40px;
+        border-bottom: 3px solid #99E2D0; 
+    }
+
+
+    .procedure {
+        
+        width:100%;
+        display: flex;
+        justify-content:space-between;
+        margin: auto;
+        background-color: white;
+        gap: 5px;
+    }
+    .anim{
+    animation-duration: 3s;
+    animation-name: glissement;
+    animation-iteration-count:initial;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+    }
+    .anim2{
+        animation-delay: 3s;
+    }
+    .anim3{
+        animation-delay:6s;
+  
+    }
+
+    @keyframes glissement {
+        from {
+        opacity: 1;
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+            opacity: 1;
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+    .block-txt{
+        width: 80%; 
+        
+    }
+    .procedure h3, .procedure p{
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 0px;
+        
+        padding: 0px 20px;
+    }
+    .procedure h3{
+        margin: 0px;
+    }
+    .price{
+        display: flex;
+        align-items: center;
+        width: 30%;
+        text-align: right;
+    }
+    .menu-animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0%;
+        opacity: 0;
+        background-color: #99E2D0;
+        border-radius: 0px 25px 25px 0px;
+    }
+    .procedure:hover .block-txt{
+        width:60%;
+        transition: all 0.5s  ease-in-out;
+    }
+    .procedure:hover .menu-animation{
+        width: 20%;
+        transition: all 0.5s ease-in-out;
+        opacity:1;
+    }
+    
+    .fa-circle-check{
+        color: #FFFFFF;
+        
+    }
+    
+    .btn-explor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    body{
+        position: relative;
+    }
+    
+    footer{
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
-.title-menu h1{
-    color: black;
+@media screen and (min-width: 768px){
+    
+    .navfooter{
+        flex-direction: row;
+    }
+    .desktop-organisation{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+    .title-menu{
+        padding-right: 30px;
+    }
+
 }
