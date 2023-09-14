@@ -21,6 +21,17 @@
     .presentation-menu4 {
         background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     }
+    .box-heart{
+        position: relative;
+    }
+    .icon2{
+        height:18px !important;
+        width: 18px !important;
+        position: absolute;
+        right: -1px;
+        opacity: 0;
+    
+    }
     .menu-box{
         width: 100%;
         gap: 40px;
@@ -30,7 +41,7 @@
     }
     .title-menu1 {
         position: absolute;
-        bottom: -1px;
+        top: 493px;
         width: 100%;
         background: #F6F6F6;
         display: flex;
@@ -147,6 +158,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+    
     }
     body{
         position: relative;
@@ -155,6 +167,7 @@
     footer{
         width: 100%;
         box-sizing: border-box;
+        
     }
 }
 @media screen and (min-width: 768px){
@@ -170,6 +183,13 @@
     }
     .title-menu{
         padding-right: 30px;
+  
     }
-
+    .btn-explor{
+        margin-bottom: 30px;
+    }
+    .title-menu1 {
+        position: absolute;
+        top: 575px;
+}
 }
