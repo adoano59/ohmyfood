@@ -1,5 +1,10 @@
 @media screen and (min-width: 320px) {
-    a{
+    .logo a{
+        
+        font-size: 30px;
+        padding-left: 20px
+    }
+    a, .logo a{
         text-decoration: none;
         color: black;
     }
@@ -30,7 +35,7 @@
         position: absolute;
         right: -1px;
         opacity: 0;
-    
+        
     }
     .menu-box{
         width: 100%;
@@ -67,11 +72,11 @@
         width: 40px;
         border-bottom: 3px solid #99E2D0; 
     }
-
-
+    
+    
     .procedure {
         
-        width:100%;
+        width:89%;
         display: flex;
         justify-content:space-between;
         margin: auto;
@@ -79,34 +84,34 @@
         gap: 5px;
     }
     .anim{
-    animation-duration: 3s;
-    animation-name: glissement;
-    animation-iteration-count:initial;
-    opacity: 0;
-    animation-fill-mode: forwards;
-
+        animation-duration: 3s;
+        animation-name: glissement;
+        animation-iteration-count:initial;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        
     }
     .anim2{
         animation-delay: 3s;
     }
     .anim3{
         animation-delay:6s;
-  
+        
     }
-
+    
     @keyframes glissement {
         from {
-        opacity: 1;
-          margin-left: 100%;
-          width: 300%;
+            opacity: 1;
+            margin-left: 100%;
+            width: 300%;
         }
-      
+        
         to {
             opacity: 1;
-          margin-left: 0%;
-          width: 100%;
+            margin-left: 0%;
+            width: 100%;
         }
-      }
+    }
     .block-txt{
         width: 80%; 
         
@@ -126,7 +131,7 @@
     .price{
         display: flex;
         align-items: center;
-        width: 30%;
+        width: 35%;
         text-align: right;
     }
     .menu-animation{
@@ -143,7 +148,7 @@
         transition: all 0.5s  ease-in-out;
     }
     .procedure:hover .menu-animation{
-        width: 20%;
+        width: 15%;
         transition: all 0.5s ease-in-out;
         opacity:1;
     }
@@ -158,7 +163,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
-    
+        
     }
     body{
         position: relative;
@@ -171,6 +176,9 @@
     }
 }
 @media screen and (min-width: 768px){
+    main{
+        background-color: #ffffff;
+    }
     
     .navfooter{
         flex-direction: row;
@@ -183,13 +191,23 @@
     }
     .title-menu{
         padding-right: 30px;
-  
+        
+    }
+    .procedure:hover .menu-animation{
+        width: 5%;
     }
     .btn-explor{
         margin-bottom: 30px;
     }
     .title-menu1 {
         position: absolute;
-        top: 575px;
-}
+        width:50%;
+        top: 658px;
+        border-radius: 40px 40px 0px 0px;
+    }
+    .menu-box{
+        margin: auto;
+        width: 50%;
+        border-radius: 0px;
+    }
 }
